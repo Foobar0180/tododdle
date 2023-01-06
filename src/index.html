@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ToDoddle</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <div id="header">
+    <a href="index.html" role="link" class="app-name" aria-label="Go to To-doddle">To-doddle</a>
+  </div>
+  <div id="main">
+    <aside id="secondary">
+      <nav aria-label="Lists" role="navigation">
+        <ul role="listbox" class="sortable-lists">
+          <li class="active" role="option">Youtube</li>
+          <li role="option">Work</li>
+          <li role="option">Groceries</li>
+        </ul>
+      </nav>
+      <div class="add-list">
+        <form action="">
+          <input type="text" class="add add-list" placeholder="List name" aria-label="List name" maxlength="255"
+            autocomplete="off" />
+          <button class="btn add-list" aria-label="New list">+</button>
+        </form>
+      </div>
+    </aside>
+    <section id="primary" role="main">
+      <div class="content-header">
+        <h2 class="list-title">Youtube</h2>
+        <p class="task-count">1 task remaining</p>
+      </div>
+      <div class="content-body">
+        <div class="tasks">
+          <div class="task">
+            <input type="checkbox" id="task-1" />
+            <label for="task-1">
+              <span class="custom-checkbox"></span>
+              This is a task
+            </label>
+          </div>
+        </div>
+        <div class="add-task">
+          <form action="">
+            <input type="text" class="add add-task" placeholder="Add a task" aria-label="Add a task" maxlength="255"
+              autocomplete="off" />
+            <button class="btn add-task" aria-label="Add a task">+</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

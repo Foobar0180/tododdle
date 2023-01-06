@@ -1,0 +1,92 @@
+:root {
+  --clr-primary: rgb(54, 112, 199);
+  --clr-light: rgb(229, 232, 236);
+  --clr-dark: rgb(35, 37, 40);
+  --clr-error: rgb(199, 54, 90);
+  --clr-white: rgb(255, 255, 255);
+}
+
+*,
+*::before,
+*::after {
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  background-color: var(--clr-light);
+  color: var(--clr-dark);
+}
+
+#main {
+  display: flex;
+  flex-direction: row;
+}
+
+#header {
+  height: 50px;
+  background-color: var(--clr-primary);
+}
+
+.app-name {
+  color: var(--clr-light);
+  line-height: 50px;
+  vertical-align: middle;
+  padding: 0 10px;
+}
+
+#secondary {
+  width: 20%;
+  height: 100vh;
+  background-color: var(--clr-light);
+  padding: 20px;
+}
+
+#primary {
+  width: 80%;
+  height: 100vh;
+  background-color: var(--clr-white);
+  padding: 20px;
+}
+
+.list-title {
+  color: var(--clr-dark);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.task-count {
+  font-size: 1.2rem;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0;
+}
+
+.task-list {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  list-style: circle;
+  padding-left: 1.1em;
+}
+
+.active-list {
+  font-weight: 900;
+}
+
+.sortable-lists {
+  margin: 0;
+}
+
+.todo-list {
+  grid-area: active;
+}
